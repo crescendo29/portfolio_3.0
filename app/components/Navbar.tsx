@@ -29,8 +29,8 @@ const Navbar = () => {
           "fixed w-full shadow-xl h-20 z-[100] bg-[#ecf0f3]"
       
     >
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Link href="/">
+      <div className="flex items-center justify-between w-full h-full px-2 2xl:px-16">
+        <a href="/">
           <Image
             className="rounded-full"
             src={logo}
@@ -38,7 +38,7 @@ const Navbar = () => {
             width="75"
             height="50"
           />
-        </Link>
+        </a>
 
         <div className="">
           <ul
@@ -50,26 +50,26 @@ const Navbar = () => {
                 Accueil
               </li>
             </Link>
-            <Link href="/#about">
+            <a href="#about">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 à propos
               </li>
-            </Link>
-            <Link href="/#skills">
+            </a>
+            <a href="#skills">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Skills
               </li>
-            </Link>
-            <Link href="/#projects">
+            </a>
+            <a href="/#projects">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Projets
               </li>
-            </Link>
-            <Link href="/#contact">
+            </a>
+            <a href="/#contact">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Contact
               </li>
-            </Link>
+            </a>
           </ul>
           <div
             onClick={handleNav}
@@ -98,7 +98,7 @@ const Navbar = () => {
           }
         >
           <div>
-            <div className="flex w-full items-center justify-between">
+            <div className="flex items-center justify-between w-full">
               <Link href="/">
                 <Image
                   className="rounded-full"
@@ -111,18 +111,18 @@ const Navbar = () => {
 
               <div
                 onClick={handleNav}
-                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
+                className="p-3 rounded-full shadow-lg cursor-pointer shadow-gray-400"
               >
                 <AiOutlineClose />
               </div>
             </div>
-            <div className="border-b border-gray-300 my-4">
+            <div className="my-4 border-b border-gray-300">
               <p className="w-[85%] md:w-[90%] py-4">
                 Construisons quelque chose ensemble.
               </p>
             </div>
           </div>
-          <div className="py-4 flex flex-col">
+          <div className="flex flex-col py-4">
             <ul className="uppercase">
               <Link href="/#home">
                 <li
@@ -132,54 +132,54 @@ const Navbar = () => {
                   Accueil
                 </li>
               </Link>
-              <Link href="/#about">
+              <a href="#about">
                 <li
                   onClick={handleNav}
                   className="py-4 text-sm"
                 >
                   About
                 </li>
-              </Link>
-              <Link href="/#skills">
+              </a>
+              <a href="#skills">
                 <li
                   onClick={handleNav}
                   className="py-4 text-sm"
                 >
                   Skills
                 </li>
-              </Link>
-              <Link href="/#projects">
+              </a>
+              <a href="#projects">
                 <li
                   onClick={handleNav}
                   className="py-4 text-sm"
                 >
                   Projects
                 </li>
-              </Link>
-              <Link href="/#contact">
+              </a>
+              <a href="/#contact">
                 <li
                   onClick={handleNav}
                   className="py-4 text-sm"
                 >
                   Contact
                 </li>
-              </Link>
+              </a>
             </ul>
             <div className="pt-40">
               <p className="uppercase tracking-widest text-[#5651e5]">
                 Let&apos;s Connect
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500 ">
+                <div className="p-3 duration-500 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 ">
                   <FaLinkedinIn />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500 ">
+                <div className="p-3 duration-500 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 ">
                   <FaGithub />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500 ">
+                <div className="p-3 duration-500 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 ">
                   <AiOutlineMail />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500 ">
+                <div className="p-3 duration-500 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105 ">
                   <BsPersonLinesFill />
                 </div>
               </div>
