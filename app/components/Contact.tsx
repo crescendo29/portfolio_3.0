@@ -1,5 +1,6 @@
+"use client"
+
 import React from "react";
-import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import {
   FaLinkedinIn,
